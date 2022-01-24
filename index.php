@@ -18,10 +18,10 @@ $testo = 'sono un paragrafo php'
 
 <?php $word = $_GET['parola']; 
 
-$censored = str_replace('ss', '***', $word);
+$censored = str_replace($word, '***', $testo );
 ?>
 <h1> La parola non censurata è <?php echo $word ?></h1>
-<h1> La parola censurata diventa <?php echo $censored ?></h1>
+<h1> La parola censurata diventa : <?php echo $censored ?></h1>
 
 </body>
 </html>
